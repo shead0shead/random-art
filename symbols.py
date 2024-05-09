@@ -4,9 +4,10 @@ from random import choice
 
 import numpy
 
-# 12 - size of one character
-WIDTH = 10 * 12
-HEIGHT = 10 * 12
+SYMBOL_SIZE = 12
+
+WIDTH = 10 * SYMBOL_SIZE
+HEIGHT = 10 * SYMBOL_SIZE
 
 BACKGROUND_COLOR = BLACK
 RESIZE_TO = (WIDTH*4, HEIGHT*4)
@@ -45,9 +46,9 @@ def random_color():
     return RGB[choice(tuple(RGB.keys()))]
 
 draw = ImageDraw.Draw(image)
-for x in range(WIDTH // 12):
-    for y in range(HEIGHT // 12):
-        draw.text((x*12 + 2, y*12 + 2), choice(SYMBOLS), font=ImageFont.truetype("fonts/MetaFont.ttf"), fill=random_color())
+for x in range(WIDTH // SYMBOL_SIZE):
+    for y in range(HEIGHT // SYMBOL_SIZE):
+        draw.text((x*SYMBOL_SIZE + 2, y*SYMBOL_SIZE + 2), choice(SYMBOLS), font=ImageFont.truetype("fonts/MetaFont.ttf"), fill=random_color())
 
 image = image.resize(RESIZE_TO, resample=Image.Resampling.BOX)
 image.save('image.png')
