@@ -12,7 +12,7 @@ HEIGHT = 10 * SYMBOL_SIZE
 BACKGROUND_COLOR = BLACK
 RESIZE_TO = (WIDTH*4, HEIGHT*4)
 
-# Enter your symbols pattern here
+# Enter your symbols pattern here SYMBOLS = '123'
 SYMBOLS = \
     "!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKL" + \
     "MNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxy" + \
