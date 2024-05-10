@@ -31,11 +31,16 @@ SYMBOLS = \
     "⅗⅘⅙⅚⅛⅜⅝⅞←↑→↓↔↕↨∂∅∆∈∏∑−∕∙√∞∟∩∫≈≠≡≤≥⊙⌀⌂⌐⌠⌡─│┌┐└" + \
     "┘├┤┬┴┼═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬▀▁▄█▌▐░▒▓■" + \
     "□▪▫▬▲►▼◄◊○●◘◙◦☺☻☼♀♂♠♣♥♦♪♫✓ﬁﬂ�╪╫"
+# SYMBOLS = '▲►▼◄●'
+# SYMBOLS = '☺☻'
 # SYMBOLS = 'QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm{};\/:|<>?/~`[]()*&^%$#@!'
 # SYMBOLS = '─│┌┐└┘├┤┬┴┼═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬'
+# SYMBOLS = '═║╒╓╔╕╖╗╘╙╚╛╜╝╞╟╠╡╢╣╤╥╦╧╨╩╪╫╬'
+# SYMBOLS = '╔╗╚╝'
 # SYMBOLS = '┌┐└┘'
 # SYMBOLS = '[](){}'
 # SYMBOLS = '0123456789'
+# SYMBOLS = '01'
 # SYMBOLS = 'ĆćĈĉĊċČčcC'
 
 data = numpy.zeros((HEIGHT, WIDTH, 3), dtype=numpy.uint8)
