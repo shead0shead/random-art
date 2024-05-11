@@ -1,4 +1,4 @@
-# random-art
+# Random Art
 
 A small utility for creating simple art 
 
