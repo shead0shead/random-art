@@ -2,7 +2,7 @@ from colors import RGB, BLACK
 from PIL import Image, ImageDraw, ImageFont
 from random import choice
 
-import numpy
+import numpy as np
 
 SYMBOL_SIZE = 12
 
@@ -42,8 +42,9 @@ SYMBOLS = \
 # SYMBOLS = '0123456789'
 # SYMBOLS = '01'
 # SYMBOLS = 'ĆćĈĉĊċČčcC'
+# SYMBOLS = '¹²³⁴⁵⁶⁷⁸⁹₁₂₃₄₅₆₇₈₉'
 
-data = numpy.zeros((HEIGHT, WIDTH, 3), dtype=numpy.uint8)
+data = np.zeros((HEIGHT, WIDTH, 3), dtype=np.uint8)
 data[:][:] = BACKGROUND_COLOR
 image = Image.fromarray(data)
 
